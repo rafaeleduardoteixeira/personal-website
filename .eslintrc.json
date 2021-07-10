@@ -1,0 +1,40 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "rules": {
+    "prettier/prettier": "error", // Sinalizar erro do prettier
+    "space-before-function-paren": "off", // Espaço antes do parentese da função
+    "react/prop-types": "off", // Usando TS não tem necessidade de usar PropTypes do React
+    "react/react-in-jsx-scope": "off", // Pois no Next não é obrigatório ter React no escopo
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".ts"] }], // Para permitir arquivos tsx ter jsx dentro,
+    "react/jsx-props-no-spreading": "off", // Permitir props spreading
+    "react/require-default-props": "off" // Não precisar adicionar default props quando uma prop não é obrigatória
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {},
+      "aliases": {
+        "map": [["@/", "./src"]]
+      }
+    }
+  }
+}
