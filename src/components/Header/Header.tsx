@@ -1,18 +1,16 @@
-import Link from 'next/link';
-
-//  Styles
-import { HeaderWrapper } from './styles';
-
 // Components
 import Contact from '@/components/Contact/Contact';
 import Logo from '../Logo/Logo';
+
+//  Styles
+import HeaderWrapper from './styles';
 
 function Header(): JSX.Element {
   return (
     <>
       <HeaderWrapper>
         <Logo />
-        <Contact withPaddingTop={true} hasHr={true} />
+        <Contact withPaddingTop hasHr />
       </HeaderWrapper>
     </>
   );

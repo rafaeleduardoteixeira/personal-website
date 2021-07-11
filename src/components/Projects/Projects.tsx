@@ -24,23 +24,21 @@ function Projects(): JSX.Element {
       </MyProjects>
 
       <ProjectsWrapper>
-        {projects.map((project, idx) => {
-          return (
-            <ProjectWrapper key={idx}>
-              <ImgContent>
-                <NextImage
-                  src={`/${project.images[0]}`}
-                  className="Image"
-                  alt={project.title}
-                  width={1000}
-                  height={470}
-                />
-              </ImgContent>
-              <h3>{project.title}</h3>
-              <p>{project.resume}</p>
-            </ProjectWrapper>
-          );
-        })}
+        {projects.map((project, idx) => (
+          <ProjectWrapper key={idx}>
+            <ImgContent>
+              <NextImage
+                src={`/${project.images[0]}`}
+                className="Image"
+                alt={project.title}
+                width={1000}
+                height={470}
+              />
+            </ImgContent>
+            <h3>{project.title}</h3>
+            <p>{project.resume}</p>
+          </ProjectWrapper>
+        ))}
       </ProjectsWrapper>
     </>
   );

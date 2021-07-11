@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const LogoWrapper = styled.div`
+const LogoWrapper = styled.div`
   > a {
     font-weight: 900;
   }
@@ -8,3 +8,5 @@ export const LogoWrapper = styled.div`
     font-weight: 300;
   }
 `;
+
+export default LogoWrapper;

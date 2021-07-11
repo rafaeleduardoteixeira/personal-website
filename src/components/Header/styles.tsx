@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const HeaderWrapper = styled.div`
+const HeaderWrapper = styled.div`
   > a {
     font-weight: 900;
   }
@@ -8,3 +8,5 @@ export const HeaderWrapper = styled.div`
     font-weight: 300;
   }
 `;
+
+export default HeaderWrapper;
