@@ -1,7 +1,7 @@
 import NextImage from 'next/image';
 
 //  Styles
-import { ProjectWrapper } from './styles';
+import ProjectWrapper from './styles';
 
 //  Imgs
 import Barricade from '../../../public/assets/barricade.png';
