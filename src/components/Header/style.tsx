@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { media } from '@/styles/GlobalStyle';
 
 export const HeaderWrapper = styled.div`
   > a {
@@ -22,6 +23,10 @@ export const ContactWrapper = styled.div`
     max-width: 20rem;
     margin-right: 0;
     width: 100%;
+  }
+
+  ${media.mobile} {
+    padding-top: 10vh;
   }
 `;
 

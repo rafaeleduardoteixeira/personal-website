@@ -8,10 +8,12 @@ function Header(): JSX.Element {
   return (
     <SkillsWrapper>
       <TextContent>
-        <h2>
-          Skills
-          <br />
-        </h2>
+        <div>
+          <h2>
+            Skills
+            <br />
+          </h2>
+        </div>
         <Text>
           <p>
             From the beginning days of when I first got into software
