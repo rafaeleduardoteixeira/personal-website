@@ -4,7 +4,6 @@ interface ISEOProps {
   title: string;
   description?: string;
   image?: string;
-  schema?: string;
   imageWidth?: number;
   imageHeight?: number;
 }

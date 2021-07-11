@@ -1,12 +1,12 @@
 import Link from 'next/link';
 
-//Svgs
+//  Svgs
 import { Instagram } from '@/svgs/Instagram';
 import { Linkedin } from '@/svgs/Linkedin';
 import { Github } from '@/svgs/Github';
 import { Facebook } from '@/svgs/Facebook';
 
-//Styles
+//  Styles
 import {
   FooterWrapper,
   TextWrapper,
@@ -16,7 +16,7 @@ import {
   Icons,
 } from './style';
 
-function Header() {
+function Header(): JSX.Element {
   return (
     <FooterWrapper>
       <TextWrapper>
@@ -42,30 +42,26 @@ function Header() {
         </LogoWrapper>
         <ContactWrapper>
           <Icons>
-            <a
-              className="Linkedin"
-              href="https://www.linkedin.com/in/rafael-eduardo-teixeira/"
-            >
-              <Linkedin />
-            </a>
-            <a
-              className="Instagram"
-              href="https://www.instagram.com/imrafaelteixeira/"
-            >
-              <Instagram />
-            </a>
-            <a
-              className="Facebook"
-              href="https://www.facebook.com/rafael.edu.teixeira"
-            >
-              <Facebook />
-            </a>
-            <a
-              className="Github"
-              href="https://github.com/rafaeleduardoteixeira"
-            >
-              <Github />
-            </a>
+            <Link href="https://www.linkedin.com/in/rafael-eduardo-teixeira/">
+              <a className="Linkedin">
+                <Linkedin />
+              </a>
+            </Link>
+            <Link href="https://www.instagram.com/imrafaelteixeira/">
+              <a className="Instagram">
+                <Instagram />
+              </a>
+            </Link>
+            <Link href="https://www.facebook.com/rafael.edu.teixeira">
+              <a className="Facebook">
+                <Facebook />
+              </a>
+            </Link>
+            <Link href="https://github.com/rafaeleduardoteixeira">
+              <a className="Github">
+                <Github />
+              </a>
+            </Link>
           </Icons>
         </ContactWrapper>
       </BottonWrapper>

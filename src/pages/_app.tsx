@@ -3,11 +3,11 @@ import GlobalStyle from '@/styles/GlobalStyle';
 import theme from '@/styles/theme';
 import { AppProps } from 'next/app';
 
-//Components
+//  Components
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 
-//Styles
+//  Styles
 import { Wrapper } from '@/styles/pages/index';
 
 export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
