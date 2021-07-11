@@ -1,20 +1,9 @@
-import Link from 'next/link';
-
-//  Svgs
-import { Instagram } from '@/svgs/Instagram';
-import { Linkedin } from '@/svgs/Linkedin';
-import { Github } from '@/svgs/Github';
-import { Facebook } from '@/svgs/Facebook';
+// Components
+import Contact from '@/components/Contact/Contact';
+import Logo from '../Logo/Logo';
 
 //  Styles
-import {
-  FooterWrapper,
-  TextWrapper,
-  BottonWrapper,
-  LogoWrapper,
-  ContactWrapper,
-  Icons,
-} from './style';
+import { FooterWrapper, TextWrapper, BottonWrapper } from './styles';
 
 function Header(): JSX.Element {
   return (
@@ -31,39 +20,8 @@ function Header(): JSX.Element {
         </a>
       </TextWrapper>
       <BottonWrapper>
-        <LogoWrapper>
-          <Link href="/">
-            <a>
-              rafael
-              <span>e</span>
-              teixeira
-            </a>
-          </Link>
-        </LogoWrapper>
-        <ContactWrapper>
-          <Icons>
-            <Link href="https://www.linkedin.com/in/rafael-eduardo-teixeira/">
-              <a className="Linkedin">
-                <Linkedin />
-              </a>
-            </Link>
-            <Link href="https://www.instagram.com/imrafaelteixeira/">
-              <a className="Instagram">
-                <Instagram />
-              </a>
-            </Link>
-            <Link href="https://www.facebook.com/rafael.edu.teixeira">
-              <a className="Facebook">
-                <Facebook />
-              </a>
-            </Link>
-            <Link href="https://github.com/rafaeleduardoteixeira">
-              <a className="Github">
-                <Github />
-              </a>
-            </Link>
-          </Icons>
-        </ContactWrapper>
+        <Logo />
+        <Contact />
       </BottonWrapper>
     </FooterWrapper>
   );

@@ -1,20 +1,20 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { media } from '@/styles/GlobalStyle';
 
-export const HeaderWrapper = styled.div`
-  > a {
-    font-weight: 900;
-  }
-  > a span {
-    font-weight: 300;
-  }
-`;
+//  Interface
+import { IContact } from '@/interface/contact.interface';
 
-export const ContactWrapper = styled.div`
-  padding-top: 10vh;
+export const ContactWrapper = styled.div<IContact>`
+  ${({ withPaddingTop }) =>
+    withPaddingTop &&
+    css`
+      padding-top: 10vh;
+    `}
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-content: center;
 
   hr {
     height: 0.05rem;
@@ -22,11 +22,14 @@ export const ContactWrapper = styled.div`
     border: none;
     max-width: 20rem;
     margin-right: 0;
+    margin-top: -10px;
     width: 100%;
   }
 
   ${media.mobile} {
-    padding-top: 10vh;
+    hr {
+      width: 30vw;
+    }
   }
 `;
 
