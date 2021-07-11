@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 //  Styles
-import { LogoWrapper } from './styles';
+import LogoWrapper from './styles';
 
 function Logo(): JSX.Element {
   return (

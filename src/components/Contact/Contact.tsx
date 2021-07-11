@@ -6,11 +6,11 @@ import { Linkedin } from '@/svgs/Linkedin';
 import { Github } from '@/svgs/Github';
 import { Facebook } from '@/svgs/Facebook';
 
-//  Styles
-import { ContactWrapper, Icons } from './styles';
-
 //  Interface
 import { IContact } from '@/interface/contact.interface';
+
+//  Styles
+import { ContactWrapper, Icons } from './styles';
 
 function Contact({ withPaddingTop, hasHr }: IContact): JSX.Element {
   return (
