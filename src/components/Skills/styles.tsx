@@ -14,6 +14,14 @@ export const SkillsWrapper = styled.div`
 
 export const TextContent = styled.div`
   width: 30vw;
+
+  ${media.mobile} {
+    h2 {
+      font-size: 1.8em;
+      font-weight: 400;
+      line-height: 40px;
+    }
+  }
 `;
 
 export const Text = styled.div`
@@ -38,7 +46,7 @@ export const Text = styled.div`
   }
 `;
 
-export const Skills = styled.div`
+export const SkillsContent = styled.div`
   width: 30vw;
   margin-left: 0;
   text-align: right;

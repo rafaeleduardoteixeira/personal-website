@@ -2,9 +2,15 @@
 import { skills } from '@/constants/skills';
 
 //  Styles
-import { SkillsWrapper, TextContent, Text, Skills, Skill } from './styles';
+import {
+  SkillsWrapper,
+  TextContent,
+  Text,
+  SkillsContent,
+  Skill,
+} from './styles';
 
-function Header(): JSX.Element {
+function Skills(): JSX.Element {
   return (
     <SkillsWrapper>
       <TextContent>
@@ -25,14 +31,14 @@ function Header(): JSX.Element {
         </Text>
       </TextContent>
       <TextContent>
-        <Skills>
+        <SkillsContent>
           {skills.map((skill, idx) => (
             <Skill key={idx}>{skill}</Skill>
           ))}
-        </Skills>
+        </SkillsContent>
       </TextContent>
     </SkillsWrapper>
   );
 }
 
-export default Header;
+export default Skills;
