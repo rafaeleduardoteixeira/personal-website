@@ -14,7 +14,7 @@ import {
   TextBold,
   ImgContent,
   Lesson,
-} from './styles';
+} from '@/styles/pages/project';
 
 function Project(): JSX.Element {
   const { query } = useRouter();
