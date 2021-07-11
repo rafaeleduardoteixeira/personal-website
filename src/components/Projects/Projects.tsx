@@ -1,4 +1,8 @@
+import { useRouter } from 'next/router';
 import NextImage from 'next/image';
+
+//  Svgs
+import { ArrowRight } from '@/svgs/ArrowRight';
 
 //  Constants
 import { projects } from '@/constants/projects';
@@ -9,9 +13,16 @@ import {
   ProjectsWrapper,
   ProjectWrapper,
   ImgContent,
+  ButtonProject,
 } from './styles';
 
 function Projects(): JSX.Element {
+  const router = useRouter();
+
+  const goToProject = projectid => {
+    router.push(`/project/${projectid}`, null, { shallow: true });
+  };
+
   return (
     <>
       <MyProjects>
@@ -24,8 +35,8 @@ function Projects(): JSX.Element {
       </MyProjects>
 
       <ProjectsWrapper>
-        {projects.map((project, idx) => (
-          <ProjectWrapper key={idx}>
+        {projects.map(project => (
+          <ProjectWrapper key={project.id}>
             <ImgContent>
               <NextImage
                 src={`/${project.images[0]}`}
@@ -37,6 +48,9 @@ function Projects(): JSX.Element {
             </ImgContent>
             <h3>{project.title}</h3>
             <p>{project.resume}</p>
+            <ButtonProject onClick={() => goToProject(project.id)}>
+              VIEW PROJECT <ArrowRight />
+            </ButtonProject>
           </ProjectWrapper>
         ))}
       </ProjectsWrapper>
