@@ -24,8 +24,9 @@ function Skills(): JSX.Element {
           <p>
             Desdo início quando decidi entrar no mundo do desenvolvimento de
             software até agora, eu aprendi e ganhei um sólido conhecimento em
-            padrões de desenvolvimento web, reutilização/escalabilidade em
-            grandes projetos e que a experiência do usuário é tudo.
+            desenvolvimento web, padrões de desenvolvimento,
+            reutilização/escalabilidade em grandes projetos e que a experiência
+            do usuário é tudo.
           </p>
         </Text>
       </TextContent>

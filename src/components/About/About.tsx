@@ -20,7 +20,7 @@ function About(): JSX.Element {
       <TextContent>
         <h1>
           Olá, eu sou Rafael. <br />
-          <span>Engenheiro de software,</span> <br />
+          <span>Engenheiro de Software,</span> <br />
         </h1>
         <h2>Empreendedor, Esposo and Pai</h2>
         <Text>
@@ -34,8 +34,7 @@ function About(): JSX.Element {
             primeira faculdade. Tenho muito orgulho de ter trabalhado ao lado de
             engenheiro incríveis, designers, analistas de negócio e PO. Na
             caminhada eu descobri uma paixão por padrões de código, ECMAScript e
-            frameworks Javascript reativos (Definitivamente, React é mais
-            fácil).
+            frameworks Javascript reativos (Definitivamente, React é o melhor).
           </p>
         </Text>
       </TextContent>

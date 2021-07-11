@@ -30,7 +30,7 @@ function Projects(): JSX.Element {
         <p>
           Eu tenho orgunho de compartilhar alguns projetos que estou trabalhando
           recentemente. Onde eu pude aprender algumas habilidades, curtir tempo
-          com meu time e muito código.
+          com meu time e claro, muito código.
         </p>
       </MyProjects>
 
