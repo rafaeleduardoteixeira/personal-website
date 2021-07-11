@@ -2,6 +2,9 @@ import Link from 'next/link';
 import NextImage from 'next/image';
 import { useRouter } from 'next/router';
 
+//  Components
+import SEO from '@/components/SEO/SEO';
+
 //  Constants
 import { projects } from '@/constants/projects';
 
@@ -27,6 +30,10 @@ function Project(): JSX.Element {
 
   return (
     <>
+      <SEO
+        title="Rafael E. Teixeira | Software Engineer"
+        description="My personal website. I created it to share my personal skills and project. I'm Software Engineer, Entrepreneur, Husband and Dad, with 14+ experience."
+      />
       {projectFiltered && (
         <ProjectWrapper>
           <h2>{projectFiltered.title}</h2>
