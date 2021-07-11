@@ -71,6 +71,7 @@ export const ProjectWrapper = styled.div`
   p {
     margin-top: 1vh;
     width: 30vw;
+    min-height: 8vh;
   }
 
   ${media.tablet} {
@@ -103,6 +104,7 @@ export const ImgContent = styled.div`
 `;
 
 export const ButtonProject = styled.button`
+  cursor: pointer;
   display: flex;
   align-items: center;
 
