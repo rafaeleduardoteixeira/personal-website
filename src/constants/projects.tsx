@@ -1,5 +1,6 @@
 export const projects = [
   {
+    id: 'institutional_website',
     title: 'Institutional Website.',
     link: 'https://www.bancobari.com.br/',
     resume:
@@ -30,6 +31,7 @@ export const projects = [
     ],
   },
   {
+    id: 'partners_portal',
     title: 'Partners Portal.',
     link: 'https://portal.parceirosbari.com.br/',
     resume: 'An application to manage loans at Bank Bari.',
@@ -60,6 +62,7 @@ export const projects = [
     ],
   },
   {
+    id: 'partners_lp',
     title: 'LP partners, Digital Sign and Newsletter.',
     link: 'https://www.bancobari.com.br/',
     resume:

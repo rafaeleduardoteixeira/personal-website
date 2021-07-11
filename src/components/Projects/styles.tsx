@@ -70,3 +70,26 @@ export const ImgContent = styled.div`
     width: 90vw;
   }
 `;
+
+export const ButtonProject = styled.button`
+  display: flex;
+  align-items: center;
+
+  margin-top: 3vh;
+  padding: 5px 15px 5px 15px;
+  height: 4vh;
+  background: #f1f1f1;
+  border: 0px;
+  font-size: 0.8em;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border-radius: 2px;
+
+  svg {
+    margin-left: 15px;
+  }
+
+  &:hover {
+    background: #e2e2e2ed;
+    transition: 300ms;
+  }
+`;

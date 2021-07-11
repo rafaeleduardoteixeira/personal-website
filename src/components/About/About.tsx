@@ -1,4 +1,6 @@
 import NextImage from 'next/image';
+
+//  Imgs
 import Profile from '../../../public/assets/profile.jpg';
 
 //  Styles
