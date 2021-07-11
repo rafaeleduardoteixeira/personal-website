@@ -16,17 +16,17 @@ function Skills(): JSX.Element {
       <TextContent>
         <div>
           <h2>
-            Skills
+            Habilidades
             <br />
           </h2>
         </div>
         <Text>
           <p>
-            From the beginning days of when I first got into software
-            development up until now, I’ve learned and gained a solid
-            understanding of web development standards, the importance of
-            reusability/scalability in large enterprise applications, and how
-            user expereince means everything.
+            Desdo início quando decidi entrar no mundo do desenvolvimento de
+            software até agora, eu aprendi e ganhei um sólido conhecimento em
+            desenvolvimento web, padrões de desenvolvimento,
+            reutilização/escalabilidade em grandes projetos e que a experiência
+            do usuário é tudo.
           </p>
         </Text>
       </TextContent>
@@ -42,3 +42,17 @@ function Skills(): JSX.Element {
 }
 
 export default Skills;
+
+/* 
+<div>
+<h2>
+  Skills
+  <br />
+</h2>
+</div>
+From the beginning days of when I first got into software
+development up until now, I’ve learned and gained a solid
+understanding of web development standards, the importance of
+reusability/scalability in large enterprise applications, and how
+user expereince means everything.
+</p> */

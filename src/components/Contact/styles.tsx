@@ -66,4 +66,10 @@ export const Icons = styled.div`
       transition: 300ms;
     }
   }
+  .Whatsapp {
+    > svg:hover > path {
+      fill: #3cb362;
+      transition: 300ms;
+    }
+  }
 `;
