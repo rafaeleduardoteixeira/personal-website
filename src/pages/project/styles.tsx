@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { media } from '@/styles/GlobalStyle';
 
-export const ProjectWrapper = styled.div`
+const ProjectWrapper = styled.div`
   padding-top: 20vh;
   display: flex;
   flex-direction: column;
@@ -22,3 +22,5 @@ export const ProjectWrapper = styled.div`
     }
   }
 `;
+
+export default ProjectWrapper;
