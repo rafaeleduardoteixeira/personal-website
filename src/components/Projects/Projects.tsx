@@ -61,11 +61,9 @@ function Projects(): JSX.Element {
 
 export default Projects;
 
-{
-  /* <h2>Recent Projects</h2>
+/* <h2>Recent Projects</h2>
 <p>
   I'm pleasure to share some projects that I've working recently. Where
   I could learned new skills, enjoying time with my coworkers and a lot
   of code.
 </p> */
-}
