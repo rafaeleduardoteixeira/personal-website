@@ -22,7 +22,7 @@ function About(): JSX.Element {
           Olá, eu sou Rafael. <br />
           <span>Engenheiro de Software,</span> <br />
         </h1>
-        <h2>Empreendedor, Esposo and Pai</h2>
+        <h2>Empreendedor, Esposo e Pai</h2>
         <Text>
           <p>
             Eu amo Jesus, minha esposa, meu filho, café, fisiculturismo, minha
