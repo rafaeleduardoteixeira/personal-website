@@ -11,6 +11,23 @@ export const MyProjects = styled.div`
     line-height: 2.25rem;
   }
 
+  ${media.tablet} {
+    width: 50vw;
+    text-align: start;
+
+    > p {
+      font-size: 16px;
+      line-height: 2.25rem;
+      width: 80vw;
+    }
+
+    h2 {
+      font-size: 1.8em;
+      font-weight: 400;
+      line-height: 40px;
+    }
+  }
+
   ${media.mobile} {
     width: 90vw;
     text-align: start;
@@ -56,8 +73,18 @@ export const ProjectWrapper = styled.div`
     width: 30vw;
   }
 
+  ${media.tablet} {
+    p {
+      margin-top: 1vh;
+      width: 40vw;
+    }
+  }
+
   ${media.mobile} {
     margin-top: 5vh;
+    p {
+      width: 90vw;
+    }
   }
 `;
 
@@ -66,6 +93,9 @@ export const ImgContent = styled.div`
   padding-bottom: 5vh;
   .Image {
     border-radius: 10px;
+  }
+  ${media.tablet} {
+    width: 40vw;
   }
   ${media.mobile} {
     width: 90vw;

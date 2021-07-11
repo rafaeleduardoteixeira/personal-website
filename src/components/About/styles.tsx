@@ -7,6 +7,13 @@ export const AboutWrapper = styled.div`
   display: flex;
   justify-content: space-between;
 
+  ${media.tablet} {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 5vh;
+  }
+
   ${media.mobile} {
     align-items: center;
     justify-content: center;
@@ -21,6 +28,10 @@ export const ImgContent = styled.div`
 
   .ProfileImage {
     border-radius: 10px;
+  }
+
+  ${media.tablet} {
+    width: 50vw;
   }
 
   ${media.mobile} {
@@ -42,6 +53,25 @@ export const TextContent = styled.div`
   > h2 {
     font-size: 2.4em;
     font-weight: 300;
+  }
+
+  ${media.tablet} {
+    padding-top: 10vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+
+    > h1 {
+      text-align: center;
+      font-size: 1.8em;
+      font-weight: 300;
+      line-height: 40px;
+    }
+    > h2 {
+      font-size: 1.8em;
+      font-weight: 300;
+      line-height: 40px;
+    }
   }
 
   ${media.mobile} {
@@ -77,6 +107,16 @@ export const Text = styled.div`
   > p {
     font-size: 14px;
     line-height: 2.25rem;
+  }
+
+  ${media.tablet} {
+    text-align: center;
+    width: 84vw;
+
+    > p {
+      font-size: 16px;
+      line-height: 2.25rem;
+    }
   }
 
   ${media.mobile} {
