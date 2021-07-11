@@ -1,6 +1,107 @@
 export const projects = [
   {
     id: 'institutional_website',
+    type: 'Trabalho Integral',
+    title: 'Website Institutional.',
+    link: 'https://www.bancobari.com.br/',
+    resume:
+      'Principal portal de contato do Banco Bari. Propósito é gerar leds para empréstimos e a conta digital, e claro, apresentar um pouco mais sobre o banco.',
+    images: [
+      'assets/projects/website/home.png',
+      'assets/projects/website/loan.png',
+      'assets/projects/website/faq.png',
+    ],
+    techs: [
+      'Javascript',
+      'Next.js',
+      'React',
+      'Styled Components',
+      'Context API',
+      'Storybook',
+      'TypeScript',
+      'Html',
+      'CSS',
+      'User Experience',
+      'Git',
+      'Git Lab',
+      'Git Flow',
+      'JSON',
+      'RestFul',
+      'Strapi CMS',
+      'Agile methodologies experience',
+    ],
+  },
+  {
+    id: 'partners_portal',
+    type: 'Trabalho Integral',
+    title: 'Portal de parceiros.',
+    link: 'https://portal.parceirosbari.com.br/',
+    resume:
+      'Aplicação para os parceiros do Banco Bari gerirem sua carteira de empréstimos.',
+    text: '',
+    images: [
+      'assets/projects/portal_partners/list_proposal.png',
+      'assets/projects/portal_partners/proposal.png',
+      'assets/projects/portal_partners/proponent.png',
+    ],
+    techs: [
+      'Javascript',
+      'Next.js',
+      'React',
+      'Styled Components',
+      'Context API',
+      'Redux',
+      'Storybook',
+      'TypeScript',
+      'Html',
+      'CSS',
+      'User Experience',
+      'Git',
+      'Git Lab',
+      'Git Flow',
+      'JSON',
+      'RestFul',
+      'Agile methodologies experience',
+    ],
+  },
+  {
+    id: 'partners_lp',
+    type: 'Trabalho Integral',
+    title: 'LP de parceiros, Assinatura Digital and Novidades.',
+    link: 'https://www.bancobari.com.br/',
+    resume:
+      "Projeto de LP's Banco Bari, este projeto provem todas as LP's utilizadas no mesmo.",
+    text: '',
+    images: [
+      'assets/projects/lp_partners/newsletter.png',
+      'assets/projects/lp_partners/by_partners.png',
+      'assets/projects/lp_partners/sign.png',
+    ],
+    techs: [
+      'Javascript',
+      'React',
+      'Styled Components',
+      'Context API',
+      'Storybook',
+      'TypeScript',
+      'Html',
+      'CSS',
+      'User Experience',
+      'Git',
+      'Git Lab',
+      'Git Flow',
+      'JSON',
+      'RestFul',
+      'Agile methodologies experience',
+    ],
+  },
+];
+
+/* 
+export const projects = [
+  {
+    id: 'institutional_website',
+    type: 'Full Time Work',
     title: 'Institutional Website.',
     link: 'https://www.bancobari.com.br/',
     resume:
@@ -32,6 +133,7 @@ export const projects = [
   },
   {
     id: 'partners_portal',
+    type: 'Full Time Work',
     title: 'Partners Portal.',
     link: 'https://portal.parceirosbari.com.br/',
     resume: 'An application to manage loans at Bank Bari.',
@@ -63,6 +165,7 @@ export const projects = [
   },
   {
     id: 'partners_lp',
+    type: 'Full Time Work',
     title: 'LP partners, Digital Sign and Newsletter.',
     link: 'https://www.bancobari.com.br/',
     resume:
@@ -91,3 +194,4 @@ export const projects = [
     ],
   },
 ];
+ */

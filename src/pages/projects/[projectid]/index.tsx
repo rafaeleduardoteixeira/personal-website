@@ -4,7 +4,7 @@ import NextImage from 'next/image';
 import ProjectWrapper from './styles';
 
 //  Imgs
-import Barricade from '../../../public/assets/barricade.png';
+import Barricade from '../../../../public/assets/barricade.png';
 
 function Project(): JSX.Element {
   return (

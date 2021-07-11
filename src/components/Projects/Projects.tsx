@@ -20,17 +20,17 @@ function Projects(): JSX.Element {
   const router = useRouter();
 
   const goToProject = projectid => {
-    router.push(`/project/${projectid}`, null, { shallow: true });
+    router.push(`/projects/${projectid}`, null, { shallow: true });
   };
 
   return (
     <>
       <MyProjects>
-        <h2>Recent Projects</h2>
+        <h2>Projetos recentes</h2>
         <p>
-          I'm pleasure to share some projects that I've working recently. Where
-          I could learned new skills, enjoying time with my coworkers and a lot
-          of code.
+          Eu tenho orgunho de compartilhar alguns projetos que estou trabalhando
+          recentemente. Onde eu pude aprender algumas habilidades, curtir tempo
+          com meu time e muito código.
         </p>
       </MyProjects>
 
@@ -49,7 +49,8 @@ function Projects(): JSX.Element {
             <h3>{project.title}</h3>
             <p>{project.resume}</p>
             <ButtonProject onClick={() => goToProject(project.id)}>
-              VIEW PROJECT <ArrowRight />
+              VER MAIS
+              <ArrowRight />
             </ButtonProject>
           </ProjectWrapper>
         ))}
@@ -59,3 +60,12 @@ function Projects(): JSX.Element {
 }
 
 export default Projects;
+
+{
+  /* <h2>Recent Projects</h2>
+<p>
+  I'm pleasure to share some projects that I've working recently. Where
+  I could learned new skills, enjoying time with my coworkers and a lot
+  of code.
+</p> */
+}

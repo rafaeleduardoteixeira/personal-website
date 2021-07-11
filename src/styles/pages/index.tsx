@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { media } from '@/styles/GlobalStyle';
 
 export const Wrapper = styled.div`
-  margin: 15vh 15vw 15vw 15vw;
+  margin: 15vh 15vw 10vw 15vw;
   display: flex;
   flex-direction: column;
 

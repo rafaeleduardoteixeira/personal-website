@@ -53,6 +53,7 @@ export const ProjectWrapper = styled.div`
 
   p {
     margin-top: 1vh;
+    width: 30vw;
   }
 
   ${media.mobile} {

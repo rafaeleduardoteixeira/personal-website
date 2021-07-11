@@ -3,8 +3,9 @@ import Link from 'next/link';
 //  Svgs
 import { Instagram } from '@/svgs/Instagram';
 import { Linkedin } from '@/svgs/Linkedin';
-import { Github } from '@/svgs/Github';
 import { Facebook } from '@/svgs/Facebook';
+import { Github } from '@/svgs/Github';
+import { Whatsapp } from '@/svgs/Whatsapp';
 
 //  Interface
 import { IContact } from '@/interface/contact.interface';
@@ -19,6 +20,11 @@ function Contact({ withPaddingTop, hasHr }: IContact): JSX.Element {
         <Link href="https://www.linkedin.com/in/rafael-eduardo-teixeira/">
           <a className="Linkedin" target="_blank">
             <Linkedin />
+          </a>
+        </Link>
+        <Link href="https://api.whatsapp.com/send?phone=5541988292230">
+          <a className="Whatsapp" target="_blank">
+            <Whatsapp />
           </a>
         </Link>
         <Link href="https://www.instagram.com/imrafaelteixeira/">
