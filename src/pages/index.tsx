@@ -1,12 +1,12 @@
-//Components
+//  Components
 import SEO from '@/components/SEO/SEO';
 import About from '@/components/About/About';
 import Skills from '@/components/Skills/Skills';
 
-//Styles
+//  Styles
 import { MyProjects } from '@/styles/pages/index';
 
-export default function Home() {
+function Home(): JSX.Element {
   return (
     <>
       <SEO
@@ -26,3 +26,5 @@ export default function Home() {
     </>
   );
 }
+
+export default Home;

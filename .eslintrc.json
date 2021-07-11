@@ -25,9 +25,20 @@
     "space-before-function-paren": "off", // Espaço antes do parentese da função
     "react/prop-types": "off", // Usando TS não tem necessidade de usar PropTypes do React
     "react/react-in-jsx-scope": "off", // Pois no Next não é obrigatório ter React no escopo
-    "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".ts"] }], // Para permitir arquivos tsx ter jsx dentro,
     "react/jsx-props-no-spreading": "off", // Permitir props spreading
-    "react/require-default-props": "off" // Não precisar adicionar default props quando uma prop não é obrigatória
+    "react/require-default-props": "off", // Não precisar adicionar default props quando uma prop não é obrigatória
+    "react/no-array-index-key": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "react/no-unescaped-entities": 0,
+    "react/jsx-filename-extension": 0,
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "never",
+        "tsx": "never"
+      }
+   ]
   },
   "settings": {
     "import/resolver": {

@@ -1,10 +1,10 @@
 import NextImage from 'next/image';
 import Profile from '../../../public/assets/profile.jpg';
 
-//Styles
+//  Styles
 import { AboutWrapper, ImgContent, TextContent, Text } from './styles';
 
-function Header() {
+function About(): JSX.Element {
   return (
     <AboutWrapper>
       <ImgContent>
@@ -39,4 +39,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default About;
