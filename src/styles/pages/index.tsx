@@ -6,6 +6,10 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
 
+  ${media.tablet} {
+    margin: 10vh 5vw 15vw 5vw;
+  }
+
   ${media.mobile} {
     margin: 10vh 5vw 15vw 5vw;
   }

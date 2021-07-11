@@ -36,6 +36,15 @@ export const Text = styled.div`
     line-height: 2.25rem;
   }
 
+  ${media.tablet} {
+    width: 40vw;
+
+    > p {
+      font-size: 16px;
+      line-height: 2.25rem;
+    }
+  }
+
   ${media.mobile} {
     width: 90vw;
 
@@ -50,6 +59,16 @@ export const SkillsContent = styled.div`
   width: 30vw;
   margin-left: 0;
   text-align: right;
+
+  ${media.tablet} {
+    width: 30vw;
+    text-align: start;
+
+    > p {
+      font-size: 16px;
+      line-height: 2.25rem;
+    }
+  }
 
   ${media.mobile} {
     width: 90vw;
