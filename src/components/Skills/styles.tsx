@@ -1,9 +1,15 @@
 import styled from 'styled-components';
+import { media } from '@/styles/GlobalStyle';
 
 export const SkillsWrapper = styled.div`
   padding-top: 15vh;
   display: flex;
   justify-content: space-between;
+
+  ${media.mobile} {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const TextContent = styled.div`
@@ -21,12 +27,31 @@ export const Text = styled.div`
     font-size: 14px;
     line-height: 2.25rem;
   }
+
+  ${media.mobile} {
+    width: 90vw;
+
+    > p {
+      font-size: 16px;
+      line-height: 2.25rem;
+    }
+  }
 `;
 
 export const Skills = styled.div`
   width: 30vw;
   margin-left: 0;
   text-align: right;
+
+  ${media.mobile} {
+    width: 90vw;
+    text-align: start;
+
+    > p {
+      font-size: 16px;
+      line-height: 2.25rem;
+    }
+  }
 `;
 
 export const Skill = styled.span`

@@ -14,7 +14,6 @@ export const skills = [
   'Html',
   'CSS',
   'User Experience',
-  'Agile methodologies experience',
   'Git',
   'Git Lab',
   'Git Flow',
@@ -33,4 +32,5 @@ export const skills = [
   'Mysql',
   'PostgreSQL',
   'Genexus',
+  'Agile methodologies experience',
 ];
