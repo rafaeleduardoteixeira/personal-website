@@ -7,7 +7,7 @@ export const AboutWrapper = styled.div`
   justify-content: space-between;
 `;
 
-export const ImgProfile = styled.div`
+export const ImgContent = styled.div`
   width: 30vw;
   height: 100%;
 
@@ -16,9 +16,7 @@ export const ImgProfile = styled.div`
   }
 `;
 
-export const LeftContent = styled.div``;
-
-export const RightContent = styled.div`
+export const TextContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -28,15 +26,14 @@ export const RightContent = styled.div`
     > span {
       font-weight: 900;
     }
-
-    > h2 {
-      font-size: 0.5em;
-      font-weight: 300;
-    }
+  }
+  > h2 {
+    font-size: 2.4em;
+    font-weight: 300;
   }
 `;
 
-export const RightText = styled.div`
+export const Text = styled.div`
   align-self: flex-end;
 
   padding-top: 6vh;
