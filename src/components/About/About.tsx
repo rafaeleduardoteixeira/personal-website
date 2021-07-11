@@ -2,36 +2,26 @@ import NextImage from 'next/image';
 import Profile from '../../../public/assets/profile.jpg';
 
 //Styles
-import {
-  AboutWrapper,
-  ImgProfile,
-  LeftContent,
-  RightContent,
-  RightText,
-} from './styles';
+import { AboutWrapper, ImgContent, TextContent, Text } from './styles';
 
 function Header() {
   return (
     <AboutWrapper>
-      <LeftContent>
-        <ImgProfile>
-          <NextImage
-            src={Profile}
-            alt="Profile image"
-            className="ProfileImage"
-            layout="responsive"
-          />
-        </ImgProfile>
-      </LeftContent>
-      <RightContent>
+      <ImgContent>
+        <NextImage
+          src={Profile}
+          alt="Profile image"
+          className="ProfileImage"
+          layout="responsive"
+        />
+      </ImgContent>
+      <TextContent>
         <h1>
-          <h2>
-            Hi, I'm Rafael. <br />
-          </h2>
+          Hi, I'm Rafael. <br />
           <span>Software Engineer,</span> <br />
-          <h2>Entrepreneur, Husband and Dad</h2>
         </h1>
-        <RightText>
+        <h2>Entrepreneur, Husband and Dad</h2>
+        <Text>
           <p>
             I love Jesus, my wife, my son, coffee, fitness, career and my life.
           </p>
@@ -43,8 +33,8 @@ function Header() {
             passionate about code standards, ECMAScript and reactive Javascript
             frameworks (Definitely React is more easily).
           </p>
-        </RightText>
-      </RightContent>
+        </Text>
+      </TextContent>
     </AboutWrapper>
   );
 }

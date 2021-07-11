@@ -55,7 +55,7 @@ export default createGlobalStyle`
 
   body {
     width: 100%;
-    background: #f6f6f6;
+    background: #fafafa;
     -webkit-font-smoothing: antialiased !important;
   }
 
