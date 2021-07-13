@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 'institutional_website',
     type: 'Trabalho Integral',
-    title: 'Website Institutional',
+    title: 'Website Institucional',
     link: 'https://www.bancobari.com.br/',
     resume:
       'Principal portal de contato do Banco Bari. Propósito é gerar leds para empréstimos e a conta digital, e claro, apresentar um pouco mais sobre o banco.',
@@ -27,7 +27,7 @@ export const projects = [
   {
     id: 'partners_portal',
     type: 'Trabalho Integral',
-    title: 'Portal de parceiros',
+    title: 'Portal de Parceiros',
     link: 'https://portal.parceirosbari.com.br/',
     resume:
       'Aplicação para os parceiros do Banco Bari gerirem sua carteira de empréstimos.',

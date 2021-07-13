@@ -34,7 +34,7 @@ function About(): JSX.Element {
             primeira faculdade. Tenho muito orgulho de ter trabalhado ao lado de
             engenheiro incríveis, designers, analistas de negócio e PO. Na
             caminhada eu descobri uma paixão por padrões de código, ECMAScript e
-            frameworks Javascript reativos (Definitivamente, React é o melhor).
+            frameworks Javascript (Definitivamente, React é o melhor).
           </p>
         </Text>
       </TextContent>
