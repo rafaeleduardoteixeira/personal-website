@@ -11,10 +11,21 @@ import Footer from '@/components/Footer/Footer';
 import { Wrapper } from '@/styles/pages/index';
 
 export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
+  
+  const postMessage = () => {
+    window.parent.postMessage(
+    {
+      type: "button-click",
+      message: "clicked"
+    },
+    "*"
+  );
+  }
+  
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <Wrapper>
+      <Wrapper onClick={() => postMessage()}>
         <Header />
         <Component {...pageProps} />
       </Wrapper>
