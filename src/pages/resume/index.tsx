@@ -1,5 +1,5 @@
 // Styles
-import { MyResumes, ResumeIframe } from './styles';
+import { MyResumes, ResumeIframe } from '@/styles/pages/resumes';
 
 function Resume(): JSX.Element {
   const getResponsiveZoom = (): string => {
