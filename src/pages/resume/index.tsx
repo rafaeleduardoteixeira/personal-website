@@ -17,7 +17,6 @@ function Resume(): JSX.Element {
   const numPages = 2;
 
   function handlePages(pdf, page, language, currentPage) {
-    console.log(getResponsiveScale());
     const canvas = document.createElement('canvas');
     const viewport = page.getViewport({
       scale: getResponsiveScale(),
