@@ -5,8 +5,8 @@ function Resume(): JSX.Element {
   const getResponsiveZoom = (): string => {
     if (window && window.matchMedia('(max-width: 1024)').matches) return '80';
     if (window && window.matchMedia('(max-width: 800)').matches) return '60';
-    if (window && window.matchMedia('(max-width: 576)').matches) return '50';
-    if (window && window.matchMedia('(max-width: 365)').matches) return '40';
+    if (window && window.matchMedia('(max-width: 576)').matches) return '40';
+    if (window && window.matchMedia('(max-width: 365)').matches) return '30';
     return '';
   };
 

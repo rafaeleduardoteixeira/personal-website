@@ -61,12 +61,12 @@ export const ResumeIframe = styled.iframe`
   }
 
   ${media.mobile} {
-    width: 430px;
+    width: 350px;
     height: 700px;
   }
 
   ${media.smallMobile} {
-    width: 400px;
+    width: 350px;
     height: 700px;
   }
 `;
