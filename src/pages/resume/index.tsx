@@ -5,14 +5,19 @@ import * as pdfjsWorker from 'pdfjs-dist/build/pdf.worker.entry';
 // Styles
 import { MyResumes, Pdf } from '@/styles/pages/resumes';
 
+// Components
+import SEO from '@/components/SEO/SEO';
+
 function Resume(): JSX.Element {
   const getResponsiveScale = (): number => {
+    if (window.matchMedia('(max-width: 400px)').matches) return 1;
+    if (window.matchMedia('(max-width: 500px)').matches) return 1;
+    if (window.matchMedia('(max-width: 600px)').matches) return 1;
     if (window.matchMedia('(max-width: 800px)').matches) return 1;
     if (window.matchMedia('(max-width: 900px)').matches) return 1.2;
     if (window.matchMedia('(max-width: 1100px)').matches) return 1.3;
     if (window.matchMedia('(max-width: 1300px)').matches) return 1.4;
-    if (window.matchMedia('(max-width: 1900px)').matches) return 1.5;
-    return 1;
+    return 1.5;
   };
 
   const numPages = 2;
@@ -60,12 +65,18 @@ function Resume(): JSX.Element {
   }, []);
 
   return (
-    <MyResumes>
-      <h2>Português | Portuguese</h2>
-      <Pdf id="portuguese" />
-      <h2>Inglês | English</h2>
-      <Pdf id="english" />
-    </MyResumes>
+    <>
+      <SEO
+        title="Rafael E. Teixeira | Software Engineer"
+        description="My personal website. I created it to share my personal skills and project. I'm Software Engineer, Entrepreneur, Husband and Dad, with 14+ experience."
+      />
+      <MyResumes>
+        <h2>Português | Portuguese</h2>
+        <Pdf id="portuguese" />
+        <h2>Inglês | English</h2>
+        <Pdf id="english" />
+      </MyResumes>
+    </>
   );
 }
 
