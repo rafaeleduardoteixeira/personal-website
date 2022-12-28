@@ -6,6 +6,7 @@ import { Linkedin } from '@/svgs/Linkedin';
 import { Facebook } from '@/svgs/Facebook';
 import { Github } from '@/svgs/Github';
 import { Whatsapp } from '@/svgs/Whatsapp';
+import Resume from '@/svgs/Resume';
 
 //  Interface
 import { IContact } from '@/interface/contact.interface';
@@ -17,6 +18,11 @@ function Contact({ withPaddingTop, hasHr }: IContact): JSX.Element {
   return (
     <ContactWrapper withPaddingTop={withPaddingTop}>
       <Icons>
+        <Link href="/resume">
+          <a className="Resume">
+            <Resume />
+          </a>
+        </Link>
         <Link href="https://www.linkedin.com/in/rafael-eduardo-teixeira/">
           <a className="Linkedin" target="_blank">
             <Linkedin />

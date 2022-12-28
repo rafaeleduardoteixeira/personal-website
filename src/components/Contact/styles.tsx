@@ -72,4 +72,10 @@ export const Icons = styled.div`
       transition: 300ms;
     }
   }
+  .Resume {
+    > svg:hover > g > path {
+      fill: black;
+      transition: 300ms;
+    }
+  }
 `;
