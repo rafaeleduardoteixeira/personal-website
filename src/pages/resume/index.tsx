@@ -6,18 +6,27 @@ import * as pdfjsWorker from 'pdfjs-dist/build/pdf.worker.entry';
 import { MyResumes, Pdf } from '@/styles/pages/resumes';
 
 function Resume(): JSX.Element {
+  const getResponsiveScale = (): number => {
+    if (window.matchMedia('(max-width: 1300px)').matches) return 1.4;
+    if (window.matchMedia('(max-width: 1100px)').matches) return 1.3;
+    if (window.matchMedia('(max-width: 900px)').matches) return 1.2;
+    if (window.matchMedia('(max-width: 800px)').matches) return 1;
+    return 1.5;
+  };
+
   const numPages = 2;
 
   function handlePages(pdf, page, language, currentPage) {
+    console.log(getResponsiveScale());
     const canvas = document.createElement('canvas');
     const viewport = page.getViewport({
-      scale: 1,
+      scale: getResponsiveScale(),
       rotate: 180,
       dontFlip: false,
     });
     const context = canvas.getContext('2d');
-    const width = viewport.viewBox[2];
-    const height = viewport.viewBox[3];
+    const width = viewport.viewBox[2] * getResponsiveScale();
+    const height = viewport.viewBox[3] * getResponsiveScale();
     viewport.width = width;
     viewport.height = height;
     canvas.height = viewport.height;
