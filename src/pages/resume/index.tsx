@@ -1,4 +1,6 @@
 import { useEffect } from 'react';
+import * as pdfJS from 'pdfjs-dist/build/pdf';
+import * as pdfjsWorker from 'pdfjs-dist/build/pdf.worker.entry';
 
 // Styles
 import { MyResumes, Pdf } from '@/styles/pages/resumes';
@@ -35,8 +37,7 @@ function Resume(): JSX.Element {
 
   const getPdf = async (language: string) => {
     let pdf = null;
-    const pdfJS = await import('pdfjs-dist/build/pdf');
-    pdfJS.GlobalWorkerOptions.workerSrc = `${window.location.origin}/pdf.worker.min.js`;
+    pdfJS.GlobalWorkerOptions.workerSrc = pdfjsWorker;
     pdf = await pdfJS.getDocument(`assets/resumes/${language}.pdf`).promise;
     pdf.getPage(1).then(page => handlePages(pdf, page, language, 1));
   };
