@@ -45,7 +45,7 @@ export const MyResumes = styled.div`
   }
 `;
 
-export const ResumeIframe = styled.iframe`
+export const ResumeIframe = styled.embed`
   padding: 20px 0 40px 0;
   width: 900px;
   height: 800px;
