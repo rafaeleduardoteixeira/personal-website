@@ -7,11 +7,12 @@ import { MyResumes, Pdf } from '@/styles/pages/resumes';
 
 function Resume(): JSX.Element {
   const getResponsiveScale = (): number => {
-    if (window.matchMedia('(max-width: 1300px)').matches) return 1.4;
-    if (window.matchMedia('(max-width: 1100px)').matches) return 1.3;
-    if (window.matchMedia('(max-width: 900px)').matches) return 1.2;
     if (window.matchMedia('(max-width: 800px)').matches) return 1;
-    return 1.5;
+    if (window.matchMedia('(max-width: 900px)').matches) return 1.2;
+    if (window.matchMedia('(max-width: 1100px)').matches) return 1.3;
+    if (window.matchMedia('(max-width: 1300px)').matches) return 1.4;
+    if (window.matchMedia('(max-width: 1900px)').matches) return 1.5;
+    return 1;
   };
 
   const numPages = 2;
