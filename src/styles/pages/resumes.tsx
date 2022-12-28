@@ -45,28 +45,6 @@ export const MyResumes = styled.div`
   }
 `;
 
-export const ResumeIframe = styled.embed`
+export const Pdf = styled.div`
   padding: 20px 0 40px 0;
-  width: 900px;
-  height: 800px;
-
-  ${media.tablet} {
-    width: 700px;
-    height: 700px;
-  }
-
-  ${media.smallTablet} {
-    width: 600px;
-    height: 700px;
-  }
-
-  ${media.mobile} {
-    width: 350px;
-    height: 700px;
-  }
-
-  ${media.smallMobile} {
-    width: 350px;
-    height: 700px;
-  }
 `;
