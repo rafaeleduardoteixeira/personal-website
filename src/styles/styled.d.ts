@@ -8,5 +8,5 @@ import theme from './theme';
 export type Theme = typeof theme; // Assim ele já vai conseguir identificar os types do nosso tema
 
 declare module 'styled-components' {
-	export interface DefaultTheme extends Theme {} // Ignorar o eslint reclamando aqui
+  export interface DefaultTheme extends Theme {} // Ignorar o eslint reclamando aqui
 }

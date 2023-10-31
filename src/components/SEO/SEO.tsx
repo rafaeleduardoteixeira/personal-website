@@ -8,13 +8,13 @@ interface ISEOProps {
   imageHeight?: number;
 }
 
-const SEO = ({
+function SEO({
   title,
   description,
   image,
   imageHeight,
   imageWidth,
-}: ISEOProps): JSX.Element => {
+}: ISEOProps): JSX.Element {
   const pageImage = image || 'assets/profile.jpg';
 
   return (
@@ -45,6 +45,6 @@ const SEO = ({
       <meta property="og:image:height" content={String(imageHeight || 512)} />
     </Head>
   );
-};
+}
 
 export default SEO;
