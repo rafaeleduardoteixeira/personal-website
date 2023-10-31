@@ -48,6 +48,8 @@ export const MyProjects = styled.div`
 export const ProjectsWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
 
   margin-top: -5vh;
   div:nth-of-type(2) {
@@ -90,7 +92,7 @@ export const ProjectWrapper = styled.div`
 `;
 
 export const ImgContent = styled.div`
-  width: 32vw;
+  width: 100%;
   padding-bottom: 5vh;
   .Image {
     border-radius: 10px;

@@ -6,7 +6,7 @@ import { useRouter } from 'next/router';
 import SEO from '@/components/SEO/SEO';
 
 //  Constants
-import { projects } from '@/constants/projects';
+import projects from '@/constants/projects';
 
 //  Styles
 import {

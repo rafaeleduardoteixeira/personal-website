@@ -5,7 +5,7 @@ import NextImage from 'next/image';
 import { ArrowRight } from '@/svgs/ArrowRight';
 
 //  Constants
-import { projects } from '@/constants/projects';
+import projects from '@/constants/projects';
 
 //  Styles
 import {
@@ -42,8 +42,8 @@ function Projects(): JSX.Element {
                 src={`/${project.images[0]}`}
                 className="Image"
                 alt={project.title}
-                width={1000}
-                height={470}
+                width={500}
+                height={300}
               />
             </ImgContent>
             <h3>{project.title}</h3>
