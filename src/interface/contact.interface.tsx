@@ -1,4 +1,4 @@
 export interface IContact {
-  withPaddingTop?: boolean;
-  hasHr?: boolean;
+  $withPaddingTop?: boolean;
+  $hasHr?: boolean;
 }

@@ -7,12 +7,10 @@ import HeaderWrapper from './styles';
 
 function Header(): JSX.Element {
   return (
-    <>
-      <HeaderWrapper>
-        <Logo />
-        <Contact withPaddingTop hasHr />
-      </HeaderWrapper>
-    </>
+    <HeaderWrapper>
+      <Logo />
+      <Contact $withPaddingTop $hasHr />
+    </HeaderWrapper>
   );
 }
 

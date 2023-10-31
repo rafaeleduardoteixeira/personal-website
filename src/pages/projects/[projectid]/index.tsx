@@ -54,8 +54,8 @@ function Project(): JSX.Element {
 
               <div>
                 <TextBold withPaddingTop>Ver mais</TextBold>
-                <Link href={projectFiltered.link}>
-                  <a target="_blank">Link</a>
+                <Link href={projectFiltered.link} target="_blank">
+                  Link
                 </Link>
               </div>
             </LeftContent>

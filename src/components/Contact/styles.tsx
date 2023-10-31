@@ -5,8 +5,8 @@ import { media } from '@/styles/GlobalStyle';
 import { IContact } from '@/interface/contact.interface';
 
 export const ContactWrapper = styled.div<IContact>`
-  ${({ withPaddingTop }) =>
-    withPaddingTop &&
+  ${({ $withPaddingTop }) =>
+    $withPaddingTop &&
     css`
       padding-top: 10vh;
     `}
@@ -40,6 +40,13 @@ export const Icons = styled.div`
 
   a + a {
     margin-left: 2vw;
+  }
+
+  .Resume {
+    svg:hover path {
+      fill: #101010;
+      transition: 300ms;
+    }
   }
 
   .Linkedin {

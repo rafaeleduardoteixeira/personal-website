@@ -28,7 +28,7 @@ function Header(): JSX.Element {
 }
 
 export default Header;
-/* 
+/*
 <h2>Have an Idea? Let's Build it.</h2>
 <p>
   Feel free to reach out if you’re in need of a Developer. Whether that

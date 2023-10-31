@@ -7,11 +7,9 @@ function Logo(): JSX.Element {
   return (
     <LogoWrapper>
       <Link href="/">
-        <a>
-          rafael
-          <span>e</span>
-          teixeira
-        </a>
+        rafael
+        <span>e</span>
+        teixeira
       </Link>
     </LogoWrapper>
   );
