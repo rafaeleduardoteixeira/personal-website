@@ -42,8 +42,8 @@ function Projects(): JSX.Element {
                 src={`/${project.images[0]}`}
                 className="Image"
                 alt={project.title}
-                width={500}
-                height={300}
+                width={550}
+                height={330}
               />
             </ImgContent>
             <h3>{project.title}</h3>

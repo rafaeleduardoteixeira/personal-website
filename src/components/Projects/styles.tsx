@@ -49,7 +49,6 @@ export const ProjectsWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  gap: 20px;
 
   margin-top: -5vh;
   div:nth-of-type(2) {

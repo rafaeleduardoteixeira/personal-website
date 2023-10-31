@@ -1,7 +1,7 @@
 const theme = {
   colors: {
-    white: "#fff",
-    black: "#262626",
+    white: '#fff',
+    black: '#262626',
   },
 
   weights: {
@@ -21,19 +21,19 @@ const theme = {
   },
 
   sizes: {
-    nano: "10px",
-    "3xs": "12px",
-    "2xs": "14px",
-    xs: "16px",
-    sm: "20px",
-    md: "24px",
-    lg: "32px",
-    xl: "40px",
-    "2xl": "48px",
-    "3xl": "64px",
-    "4xl": "80px",
-    display1: "96px",
-    display2: "112px",
+    nano: '10px',
+    '3xs': '12px',
+    '2xs': '14px',
+    xs: '16px',
+    sm: '20px',
+    md: '24px',
+    lg: '32px',
+    xl: '40px',
+    '2xl': '48px',
+    '3xl': '64px',
+    '4xl': '80px',
+    display1: '96px',
+    display2: '112px',
   },
 };
 

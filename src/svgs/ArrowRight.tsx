@@ -1,4 +1,4 @@
-export const ArrowRight = () => {
+export function ArrowRight() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -9,4 +9,4 @@ export const ArrowRight = () => {
       <path fill="rgb(38, 38, 38)" d="M24 11.871l-5-4.871v3h-19v4h19v3z" />
     </svg>
   );
-};
+}
